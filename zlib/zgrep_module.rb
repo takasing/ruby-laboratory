@@ -7,6 +7,11 @@ module ZgrepModule
       exit 1
     end
 
+    if !File.file?(filepath)
+      puts "#{filepath} isn't file."
+      exit 1
+    end
+
     if File.extname(filepath) != ".gz"
       puts "File extension isn't gzip."
       exit 1
