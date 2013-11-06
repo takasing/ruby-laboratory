@@ -1,6 +1,5 @@
 require 'zlib'
 
-# TODO:keyword parameter
 module ZgrepModule
   def zgrep(str, filepath)
     if str.nil? || str.empty?
