@@ -2,7 +2,7 @@
 def method(param1, param2)
   if block_given?
     # ブロックありの挙動
-    yield
+    yield(param1, param2)
   else
     # ブロックなしの挙動
   end
