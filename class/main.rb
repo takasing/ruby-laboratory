@@ -19,3 +19,6 @@ french = FrenchHello.new
 french.name = "french"
 french.greet
 
+aho = Hello.new("test")
+aho.greet
+
