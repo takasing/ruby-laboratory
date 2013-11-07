@@ -19,10 +19,14 @@ block_method
 block_method do |greet|
   puts "#{greet}!"
 end
+
+# no block no param
 double_param
+# no param
 double_param do |greet, name|
   puts "#{greet}! #{name}!!"
 end
+# param
 double_param "Bonjour", "takasing" do |greet, name|
   puts "#{greet}! #{greet}!! #{name}!!!"
 end
