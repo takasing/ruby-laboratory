@@ -17,7 +17,14 @@ end
 
 options = {count: 50}
 
+tweets = Hash.new
 client.user_timeline("toyo_takasing", options).each do |res|
-  p "#{res.text} at #{res.created_at}"
+  tweets["#{res.created_at}"] = res.text
 end
+
+# TODO:sort by date
+sorted_tweet = tweets.sort_by{ |key, val| key }
+sorted_tweet.each { |key, value|
+  puts "#{value}(#{key})"
+}
 
