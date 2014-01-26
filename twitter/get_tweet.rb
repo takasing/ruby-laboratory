@@ -7,6 +7,7 @@ require 'twitter'
 #  cnf.oauth_token_secret = "oauth_token_secret"
 #end
 
+# input your application keys
 client = Twitter::REST::Client.new do |config|
   config.consumer_key = "consumer_key"
   config.consumer_secret = "consumer_secret"
