@@ -1,17 +1,17 @@
 require 'twitter'
 
 #Twitter.configure do |cnf|
-#  cnf.consumer_key = "xN8WWEAqEcUgx4CGxo8kQ"
-#  cnf.consumer_secret = "MEzrMqT0poJBYbcM99OvIyebe9iFkcepAzTLjA7Y"
-#  cnf.oauth_token = "409179534-RxLWkHNEWYHyuerHzmk2Yxvzk0JglL6i9jJfS52h"
-#  cnf.oauth_token_secret = "qe9VvyjDugvGhAmD0pBAAhcGbXra48SpWifr9q3uPNtsz"
+#  cnf.consumer_key = "consumer_key"
+#  cnf.consumer_secret = "consumer_secret"
+#  cnf.oauth_token = "oauth_token"
+#  cnf.oauth_token_secret = "oauth_token_secret"
 #end
 
 client = Twitter::REST::Client.new do |config|
-  config.consumer_key = "xN8WWEAqEcUgx4CGxo8kQ"
-  config.consumer_secret = "MEzrMqT0poJBYbcM99OvIyebe9iFkcepAzTLjA7Y"
-  config.oauth_token = "409179534-RxLWkHNEWYHyuerHzmk2Yxvzk0JglL6i9jJfS52h"
-  config.oauth_token_secret = "qe9VvyjDugvGhAmD0pBAAhcGbXra48SpWifr9q3uPNtsz"
+  config.consumer_key = "consumer_key"
+  config.consumer_secret = "consumer_secret"
+  config.oauth_token = "oauth_token"
+  config.oauth_token_secret = "oauth_token_secret"
 end
 
 options = {count: 50}
