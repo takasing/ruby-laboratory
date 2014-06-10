@@ -1,4 +1,6 @@
 ruby-laboratory
 ===============
 
-ruby scripts.
+ruby scripts.  
+@deprecated  
+move to turks.
